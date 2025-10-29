@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Versicherungsmakler Verzeichnis - Die führenden Versicherungsmakler vergleichen">
     <meta name="keywords" content="Versicherungsmakler, Versicherung, Makler, Verzeichnis">
     <meta name="author" content="Versicherungsmakler Verzeichnis">
     <title>Versicherungsmakler Verzeichnis - Die führenden Versicherungsmakler vergleichen</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
-<body class="bg-white text-gray-900 font-sans">
+<body>
+    
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative">
             <div class="flex items-center">
-                <h1 class="text-2xl font-bold text-blue-600">Versicherungsmakler</h1>
+                <a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy/" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Versicherungsmakler</a>
             </div>
             <div class="hidden md:flex space-x-8">
                 <a href="#directory" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Directory</a>
                 <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
                 <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Contact</a>
             </div>
-            <button class="md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
+            <button class="mobile-menu-button md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
+            <div class="mobile-menu hidden md:hidden absolute top-full left-0 right-0 bg-white shadow-lg rounded-b-lg z-40">
+                <div class="flex flex-col space-y-4 p-6">
+                    <a href="#directory" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Directory</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="h-screen md:h-[50vh] bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
+    <section class="h-screen md:h-[50vh] bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 flex items-center justify-center relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop'); background-size: cover; background-position: center; background-blend-mode: overlay;">
+        <div class="absolute inset-0 opacity-20">
             <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
                 <defs>
                     <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -42,11 +55,11 @@
             </svg>
         </div>
         <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-lg">
                 Versicherungsmakler Verzeichnis
             </h1>
-            <p class="text-xl sm:text-2xl md:text-3xl text-blue-100 mb-8 leading-relaxed font-light">
-                Die führenden Versicherungsmakler vergleichen
+            <p class="text-xl sm:text-2xl md:text-3xl text-blue-50 mb-8 leading-relaxed font-light drop-shadow-md">
+                Die führenden Versicherungsmakler vergleichen und finden
             </p>
             <a href="https://versicherungsmakler.team" class="inline-block bg-white text-blue-600 px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                 Jetzt Erkunden
@@ -55,6 +68,38 @@
     </section>
 
     <!-- Directory Section -->
+    
+
+    <!-- CTA Section -->
+    <section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Möchten Sie Ihr Unternehmen hinzufügen?
+            </h2>
+            <p class="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+                Registrieren Sie sich jetzt und werden Sie Teil unseres Premium-Verzeichnisses. Erreichen Sie mehr Kunden und erweitern Sie Ihr Geschäftsnetzwerk
+            </p>
+            <a href="https://versicherungsmakler.team" class="inline-block bg-white text-blue-600 px-8 sm:px-12 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Listing Einreichen
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center tracking-tight">
+                Über Uns
+            </h2>
+            <div class="w-full md:w-2/3 mx-auto text-center">
+                <p class="text-lg sm:text-xl text-gray-700 leading-loose mb-0">
+                    Das Versicherungsmakler Verzeichnis ist eine umfassende und vertrauenswürdige Plattform, die es Kunden ermöglicht, die besten Versicherungsmakler in Deutschland zu finden, zu vergleichen und auszuwählen. Unser innovatives Verzeichnis bietet detaillierte Informationen über spezialisierte Makler in verschiedenen Bereichen wie Finanzberatung, Cyberversicherungen, Heilberufe und regionale Dienstleistungen. Wir verpflichten uns, Transparenz und Qualität zu gewährleisten, indem wir nur zertifizierte und bewertete Makler in unseren Katalog aufnehmen. Unser Ziel ist es, Ihnen bei der Auswahl des perfekten Versicherungspartners zu helfen und Ihnen damit Sicherheit und Vertrauen zu geben.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <section id="directory" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12 sm:mb-16 lg:mb-20">
@@ -190,46 +235,14 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
-                Möchten Sie Ihr Unternehmen hinzufügen?
-            </h2>
-            <p class="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
-                Registrieren Sie sich jetzt und werden Sie Teil unseres Premium-Verzeichnisses
-            </p>
-            <a href="https://versicherungsmakler.team" class="inline-block bg-white text-blue-600 px-8 sm:px-12 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                Listing Einreichen
-            </a>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center tracking-tight">
-                Über Uns
-            </h2>
-            <div class="w-full md:w-2/3 mx-auto text-center">
-                <p class="text-lg sm:text-xl text-gray-700 leading-loose mb-0">
-                    Das Versicherungsmakler Verzeichnis ist eine umfassende Plattform, die es Kunden ermöglicht, die besten Versicherungsmakler in Deutschland zu finden und zu vergleichen. Unser Verzeichnis bietet detaillierte Informationen über spezialisierte Makler in verschiedenen Bereichen wie Finanzberatung, Cyberversicherungen, Heilberufe und regionale Dienstleistungen. Wir verpflichten uns, Transparenz und Qualität zu gewährleisten, indem wir nur zertifizierte und bewertete Makler in unseren Katalog aufnehmen, um Ihnen bei der Auswahl des perfekten Versicherungspartners zu helfen.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer id="contact" class="bg-gray-900 text-gray-300 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    </section><footer id="contact" class="bg-gray-900 text-gray-300 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <!-- Column 1: About -->
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4 tracking-tight">Versicherungsmakler</h3>
                     <p class="text-gray-400 leading-relaxed text-sm">
-                        Ihr vertrauenswürdiger Partner für die Suche nach den besten Versicherungsmakler in Deutschland.
+                        Ihr vertrauenswürdiger Partner für die Suche nach den besten Versicherungsmakler in Deutschland. Transparenz und Qualität sind unsere Priorität.
                     </p>
                 </div>
 
@@ -240,7 +253,7 @@
                         <li><a href="#directory" class="text-gray-400 hover:text-white transition-colors duration-300">Directory</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">Über Uns</a></li>
                         <li><a href="https://versicherungsmakler.team" class="text-gray-400 hover:text-white transition-colors duration-300">Listing Einreichen</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
 
@@ -248,10 +261,10 @@
                 <div>
                     <h3 class="text-lg font-bold text-white mb-4 tracking-tight">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Datenschutz</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Nutzungsbedingungen</a></li>
+                        <li><a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Datenschutz</a></li>
+                        <li><a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Nutzungsbedingungen</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Impressum</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Kontakt</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Kontakt</a></li>
                     </ul>
                 </div>
 
@@ -285,9 +298,9 @@
                         &copy; 2024 Versicherungsmakler Verzeichnis. Alle Rechte vorbehalten.
                     </p>
                     <div class="flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Datenschutz</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Nutzungsbedingungen</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Sitemap</a>
+                        <a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Datenschutz</a>
+                        <a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Nutzungsbedingungen</a>
+                        <a href="https://mikelowrey2.github.io/versicherungsmakler-verzeichnis-2025-10-29-1plzy//blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a>
                     </div>
                 </div>
             </div>
@@ -297,11 +310,29 @@
     <!-- Mobile Menu Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const menuButton = document.querySelector('button[class*="md:hidden"]');
-            if (menuButton) {
-                menuButton.addEventListener('click', function() {
-                    const menu = document.querySelector('nav');
-                    menu.classList.toggle('hidden');
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
                 });
             }
 
@@ -320,5 +351,6 @@
             });
         });
     </script>
+
 </body>
 </html>
